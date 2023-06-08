@@ -13,6 +13,8 @@
 		5208A71C2A28566A003C4889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5208A71A2A28566A003C4889 /* Main.storyboard */; };
 		5208A71E2A28566B003C4889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5208A71D2A28566B003C4889 /* Assets.xcassets */; };
 		5208A7212A28566B003C4889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5208A71F2A28566B003C4889 /* LaunchScreen.storyboard */; };
+		52807CB12A322A2F00970B0D /* TextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52807CB02A322A2F00970B0D /* TextViewViewController.swift */; };
+		528BD00A2A31D2BD00E99731 /* LableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528BD0092A31D2BD00E99731 /* LableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5208A71D2A28566B003C4889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5208A7202A28566B003C4889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5208A7222A28566B003C4889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52807CB02A322A2F00970B0D /* TextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewViewController.swift; sourceTree = "<group>"; };
+		528BD0092A31D2BD00E99731 /* LableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 		5208A7132A28566A003C4889 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				52807CB02A322A2F00970B0D /* TextViewViewController.swift */,
 				5208A7142A28566A003C4889 /* AppDelegate.swift */,
+				528BD0092A31D2BD00E99731 /* LableViewController.swift */,
 				5208A7162A28566A003C4889 /* SceneDelegate.swift */,
 				5208A7182A28566A003C4889 /* ViewController.swift */,
 				5208A71A2A28566A003C4889 /* Main.storyboard */,
@@ -141,6 +147,8 @@
 				5208A7192A28566A003C4889 /* ViewController.swift in Sources */,
 				5208A7152A28566A003C4889 /* AppDelegate.swift in Sources */,
 				5208A7172A28566A003C4889 /* SceneDelegate.swift in Sources */,
+				528BD00A2A31D2BD00E99731 /* LableViewController.swift in Sources */,
+				52807CB12A322A2F00970B0D /* TextViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
