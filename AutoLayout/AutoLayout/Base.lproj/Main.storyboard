@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Azy-Nj-0IE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BQl-eg-Exa">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <accessibilityOverrides/>
     <dependencies>
@@ -948,7 +948,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los Angels, US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FW7-PH-T12">
-                                <rect key="frame" x="213" y="100" width="121.33333333333334" height="22"/>
+                                <rect key="frame" x="213.00000000000003" y="100" width="121.33333333333334" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1130,14 +1130,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="21" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sxu-2h-LxH">
-                                <rect key="frame" x="31" y="138" width="343" height="43"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sxu-2h-LxH">
+                                <rect key="frame" x="31" y="138" width="343" height="33.333333333333343"/>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
-                                <fontDescription key="fontDescription" name="Times-Roman" family="Times" pointSize="18"/>
+                                <string key="text"> Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World!  Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World!  Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! Hello World! </string>
+                                <fontDescription key="fontDescription" name="Times-Roman" family="Times" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.1496284122" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="shadowColor" systemColor="systemIndigoColor"/>
-                                <size key="shadowOffset" width="2" height="3"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w6-qk-N3v">
                                 <rect key="frame" x="20" y="271" width="346" height="26"/>
@@ -1223,9 +1224,11 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9k-WP-vL2">
-                                <rect key="frame" x="30" y="116" width="364" height="600"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" bouncesZoom="NO" usesAttributedText="YES" findInteractionEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9k-WP-vL2">
+                                <rect key="frame" x="30" y="116" width="354" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="bkr-dm-1e0"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Introduction">
                                         <attributes>
@@ -1446,25 +1449,61 @@ Cg
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" smartDashesType="yes" smartQuotesType="yes"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CNI-D6-P41"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CNI-D6-P41" firstAttribute="trailing" secondItem="6fp-8b-9mf" secondAttribute="trailing" constant="40" id="DIT-Ma-cnC"/>
-                            <constraint firstItem="I9k-WP-vL2" firstAttribute="trailing" secondItem="0vA-oa-Yjq" secondAttribute="trailingMargin" id="KJd-of-IBF"/>
-                            <constraint firstItem="CNI-D6-P41" firstAttribute="bottom" secondItem="I9k-WP-vL2" secondAttribute="bottom" constant="20" id="Ovj-di-iE6"/>
                             <constraint firstItem="6fp-8b-9mf" firstAttribute="leading" secondItem="0vA-oa-Yjq" secondAttribute="leading" constant="40" id="bAH-Of-jcu"/>
-                            <constraint firstItem="I9k-WP-vL2" firstAttribute="leading" secondItem="CNI-D6-P41" secondAttribute="leading" constant="30" id="gfj-7p-9Pf"/>
-                            <constraint firstItem="I9k-WP-vL2" firstAttribute="top" secondItem="6fp-8b-9mf" secondAttribute="bottom" constant="38" id="iz6-In-zFC"/>
                             <constraint firstItem="6fp-8b-9mf" firstAttribute="top" secondItem="CNI-D6-P41" secondAttribute="top" constant="34" id="oO2-OU-qri"/>
+                            <constraint firstItem="I9k-WP-vL2" firstAttribute="leading" secondItem="CNI-D6-P41" secondAttribute="leading" constant="30" id="wAN-9g-vRX"/>
+                            <constraint firstItem="CNI-D6-P41" firstAttribute="trailing" secondItem="I9k-WP-vL2" secondAttribute="trailing" constant="30" id="xXE-3P-a0p"/>
+                            <constraint firstItem="I9k-WP-vL2" firstAttribute="top" secondItem="CNI-D6-P41" secondAttribute="top" constant="116" id="zkF-p5-l31"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iu-VY-qSn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9043.4782608695659" y="-375.00000000000006"/>
+        </scene>
+        <!--Text Field View Controller-->
+        <scene sceneID="jMG-Zb-dvJ">
+            <objects>
+                <viewController id="vjm-Cw-5n2" customClass="TextFieldViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Btf-S9-KrU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter name" minimumFontSize="18" background="simform" translatesAutoresizingMaskIntoConstraints="NO" id="a1Z-Wb-Jq2">
+                                <rect key="frame" x="40" y="180" width="334" height="34"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <imageReference key="disabledBackground" image="rectangle.and.pencil.and.ellipsis" catalog="system" symbolScale="small" variableValue="1"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Stack" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="sVR-Ec-9RM">
+                                <rect key="frame" x="40" y="229" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hcC-Ac-tWH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hcC-Ac-tWH" firstAttribute="trailing" secondItem="a1Z-Wb-Jq2" secondAttribute="trailing" constant="40" id="MZ3-tD-t4d"/>
+                            <constraint firstItem="sVR-Ec-9RM" firstAttribute="top" secondItem="a1Z-Wb-Jq2" secondAttribute="bottom" constant="15" id="ODu-wU-OLE"/>
+                            <constraint firstItem="a1Z-Wb-Jq2" firstAttribute="top" secondItem="hcC-Ac-tWH" secondAttribute="top" constant="180" id="OHU-S4-CSM"/>
+                            <constraint firstItem="sVR-Ec-9RM" firstAttribute="trailing" secondItem="a1Z-Wb-Jq2" secondAttribute="trailing" id="PEK-Ka-gtd"/>
+                            <constraint firstItem="sVR-Ec-9RM" firstAttribute="leading" secondItem="a1Z-Wb-Jq2" secondAttribute="leading" id="QFV-Sd-5QZ"/>
+                            <constraint firstItem="a1Z-Wb-Jq2" firstAttribute="leading" secondItem="hcC-Ac-tWH" secondAttribute="leading" constant="40" id="zCY-d0-0kV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfR-p4-KQz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10059" y="-599"/>
         </scene>
     </scenes>
     <resources>
@@ -1477,6 +1516,8 @@ Cg
         <image name="images" width="259" height="194"/>
         <image name="lion" width="512" height="512"/>
         <image name="logo" width="100" height="100"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="80"/>
+        <image name="simform" width="3960" height="2640"/>
         <image name="square.and.arrow.up.on.square" catalog="system" width="119" height="128"/>
         <image name="successfully-done 2" width="180" height="180"/>
         <image name="tiger" width="512" height="512"/>
