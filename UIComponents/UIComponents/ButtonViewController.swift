@@ -20,6 +20,8 @@ class ButtonViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nameOfUSer.delegate = self
+        stackOfUser.delegate = self
 
     }
     
@@ -33,6 +35,8 @@ class ButtonViewController: UIViewController,UITextFieldDelegate {
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.becomeFirstResponder()
+        
+
     }
        
     
@@ -45,8 +49,13 @@ class ButtonViewController: UIViewController,UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return true
+        let maxLengthOdInput = 8
+        let currentString =  textField.text ?? ""
+        let newString = (currentString as NSString).replacingCharacters(in: range, with: string)
+        return newString.count <= maxLengthOdInput
+        
     }
+    
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
         

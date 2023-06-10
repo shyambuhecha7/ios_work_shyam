@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5254448C2A345D6800F5D50B /* JobSeekAppStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5254448B2A345D6800F5D50B /* JobSeekAppStoryboard.storyboard */; };
+		5254448E2A345D8400F5D50B /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254448D2A345D8400F5D50B /* RegistrationViewController.swift */; };
 		52D1F8BF2A332C230030F5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8BE2A332C230030F5F1 /* AppDelegate.swift */; };
 		52D1F8C12A332C230030F5F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */; };
 		52D1F8C32A332C230030F5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8C22A332C230030F5F1 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5254448B2A345D6800F5D50B /* JobSeekAppStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JobSeekAppStoryboard.storyboard; sourceTree = "<group>"; };
+		5254448D2A345D8400F5D50B /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		52D1F8BB2A332C230030F5F1 /* UIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D1F8BE2A332C230030F5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				52D1F8C72A332C250030F5F1 /* Assets.xcassets */,
 				52D1F8C92A332C250030F5F1 /* LaunchScreen.storyboard */,
 				52D1F8CC2A332C250030F5F1 /* Info.plist */,
+				5254448B2A345D6800F5D50B /* JobSeekAppStoryboard.storyboard */,
+				5254448D2A345D8400F5D50B /* RegistrationViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 			files = (
 				52D1F8CB2A332C250030F5F1 /* LaunchScreen.storyboard in Resources */,
 				52D1F8C82A332C250030F5F1 /* Assets.xcassets in Resources */,
+				5254448C2A345D6800F5D50B /* JobSeekAppStoryboard.storyboard in Resources */,
 				52D1F8C62A332C230030F5F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5254448E2A345D8400F5D50B /* RegistrationViewController.swift in Sources */,
 				52D1F8D32A332CD50030F5F1 /* TextfieldViewController.swift in Sources */,
 				52D1F8C32A332C230030F5F1 /* ViewController.swift in Sources */,
 				52D1F8BF2A332C230030F5F1 /* AppDelegate.swift in Sources */,
