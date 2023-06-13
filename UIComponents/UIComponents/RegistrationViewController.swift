@@ -7,35 +7,54 @@
 
 import UIKit
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: UIViewController{
     
+    @IBOutlet weak var textfieldUsername: UITextField!
+
     @IBOutlet weak var textfieldEmail: UITextField!
+    
+    @IBOutlet weak var textfieldPassword: UITextField!
+    
+    @IBOutlet weak var textfieldConfirmPassword: UITextField!
+    
+    @IBOutlet weak var btnRegister: UIButton!
+    
+    @IBOutlet weak var confirmPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textfieldEmail.borderStyle = .roundedRect
-        textfieldEmail.placeholder = "Enter Email"
-        textfieldEmail.layer.borderWidth = 2
         
-        addLeftImage(textField: textfieldEmail, ending: UIImage(named: "mail") ?? UIImage())
-        addTextFieldBorderStyle(textField: textfieldEmail, borderWidth: 1.5, borderColor: UIColor.white.cgColor, cornerRadius: 12)
+        textfieldEmail.addLeftImageToTextView( ending: UIImage(named: "mail") ?? UIImage())
+        textfieldEmail.addTextFieldBorderStyle( borderWidth: 1.2, borderColor: UIColor.white.cgColor, cornerRadius: 12)
         
+        textfieldUsername.addLeftImageToTextView( ending: UIImage(named: "person") ?? UIImage())
+        textfieldUsername.addTextFieldBorderStyle( borderWidth: 1.2, borderColor: UIColor.white.cgColor, cornerRadius: 12)
+        
+        textfieldPassword.addLeftImageToTextView( ending: UIImage(named: "password") ?? UIImage())
+        textfieldPassword.addTextFieldBorderStyle( borderWidth: 1.2, borderColor: UIColor.white.cgColor, cornerRadius: 12)
+        
+
+        textfieldConfirmPassword.addLeftImageToTextView( ending: UIImage(named: "password") ?? UIImage())
+        textfieldConfirmPassword.addTextFieldBorderStyle( borderWidth: 1.2, borderColor: UIColor.white.cgColor, cornerRadius: 12)
+        
+        btnRegister.layer.cornerRadius = 12
+        
+        
+       // textfieldEmail.setLeftPaddingPoints(5.0)
         
     }
+  
     
-    func addLeftImage(textField: UITextField,ending img: UIImage) {
-        let leftImageView = UIImageView(frame: CGRect(x: 3, y: 0, width: 30, height: 30))
-        leftImageView.image = img
-        textField.leftView = leftImageView
-        textField.leftViewMode = .always
-       
+    
+    
+    @IBAction func changeBtnTitle(_ sender: UIButton) {
+      
+        sender.setTitle("Click", for: UIControl.State.normal)
+        
+        sender.tintColor = UIColor.yellow
     }
+  
     
-    func addTextFieldBorderStyle(textField: UITextField , borderWidth: Double, borderColor: CGColor, cornerRadius: Int ) {
-        textField.layer.cornerRadius = CGFloat(cornerRadius)
-        textField.layer.borderWidth = CGFloat(borderWidth)
-        textField.layer.borderColor = borderColor
-    
-    }
+   
     
 }
