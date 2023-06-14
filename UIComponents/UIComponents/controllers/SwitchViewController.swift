@@ -23,6 +23,10 @@ class SwitchViewController: UIViewController {
     @IBOutlet weak var myProgressView: UIProgressView!
     var progressValue = 0.0
     
+    @IBOutlet weak var myProgressviewChangeByStepper: UIProgressView!
+    
+    
+    
     var timer: Timer!
     
     //UISwitch
@@ -50,10 +54,10 @@ class SwitchViewController: UIViewController {
         
         mySlider.minimumValue = 0
         mySlider.maximumValue = 1
-        mySlider.value = 1
+        mySlider.value = 0
         
         //for progressbar
-        self.perform(#selector(setUpProgress), with: nil, afterDelay: 0.1)
+         self.perform(#selector(setUpProgress), with: nil, afterDelay: 0.1)
         
         //stepper
         myStepper.maximumValue = 10
@@ -62,10 +66,9 @@ class SwitchViewController: UIViewController {
         myStepper.isContinuous = true
         myStepper.autorepeat = true
         
-       
-      
-        
-    }
+        myProgressviewChangeByStepper.progress = 0
+    
+}
     
     @IBAction func sliderChanged(_ sender: UISlider) {
         
@@ -77,15 +80,20 @@ class SwitchViewController: UIViewController {
     
     //
     @objc func setUpProgress() {
-      progressValue = progressValue + 0.01
+        progressValue = progressValue + 0.01
         self.myProgressView.progress = Float(progressValue)
         if progressValue != 1.0 {
             self.perform(#selector(setUpProgress), with: nil, afterDelay: 0.5)
         }
     }
-    
+       
     @IBAction func stepperValueChange(_ sender: UIStepper) {
-      
+        
         myLabel.text = sender.value.description
+        let progress = Float(sender.value/sender.maximumValue)
+        myProgressviewChangeByStepper.progress = progress
+
     }
+   
+        
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rrZ-bk-one">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -41,43 +41,48 @@
                                 </connections>
                             </slider>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-rf-7Eb">
-                                <rect key="frame" x="33" y="619" width="348" height="20"/>
+                                <rect key="frame" x="33" y="619" width="348" height="2"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="WUJ-n1-yQy"/>
+                                    <constraint firstAttribute="height" constant="2" id="WUJ-n1-yQy"/>
                                 </constraints>
                                 <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="trackTintColor" systemColor="systemGreenColor"/>
                             </progressView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LQl-30-yEN">
                                 <rect key="frame" x="160" y="260" width="94" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="stepperValueChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="zqO-1K-L5g"/>
                                 </connections>
                             </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqo-gI-1KN">
-                                <rect key="frame" x="177" y="196" width="60" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="A9G-D3-p2T"/>
-                                    <constraint firstAttribute="width" constant="60" id="R3d-ui-aQW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aRc-fZ-gpv">
-                                <rect key="frame" x="123" y="73" width="131" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aRc-fZ-gpv">
+                                <rect key="frame" x="141.66666666666666" y="73" width="130.99999999999997" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
+                                    <segment title=""/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6jO-SW-Nbe">
+                                <rect key="frame" x="33" y="659" width="348" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="e7o-qI-Tfs"/>
+                                    <constraint firstAttribute="height" constant="4" id="yyM-Nv-xUc"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqo-gI-1KN">
+                                <rect key="frame" x="174.33333333333334" y="671" width="65.666666666666657" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Cqo-gI-1KN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="196" id="2Ba-W0-5Fq"/>
                             <constraint firstItem="wvw-Nx-B8l" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="EKT-0m-HeQ"/>
+                            <constraint firstItem="aRc-fZ-gpv" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="GiU-2C-hFL"/>
+                            <constraint firstItem="aRc-fZ-gpv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="73" id="Hbr-f3-Feb"/>
+                            <constraint firstItem="6jO-SW-Nbe" firstAttribute="top" secondItem="Fpc-rf-7Eb" secondAttribute="bottom" constant="38" id="Ico-5B-Kz0"/>
                             <constraint firstItem="Fpc-rf-7Eb" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.84" id="LMB-6h-TWk"/>
                             <constraint firstItem="Fpc-rf-7Eb" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Nlg-kX-aA2"/>
                             <constraint firstItem="wvw-Nx-B8l" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="486" id="QaV-fM-Hei"/>
@@ -85,15 +90,18 @@
                             <constraint firstItem="LQl-30-yEN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="260" id="VCB-kf-jOW"/>
                             <constraint firstItem="lGH-tb-kYx" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="h6N-po-qh5"/>
                             <constraint firstItem="Fpc-rf-7Eb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="619" id="hES-nK-HSc"/>
+                            <constraint firstItem="Cqo-gI-1KN" firstAttribute="centerX" secondItem="6jO-SW-Nbe" secondAttribute="centerX" id="hNB-hr-mhU"/>
+                            <constraint firstItem="6jO-SW-Nbe" firstAttribute="centerX" secondItem="Fpc-rf-7Eb" secondAttribute="centerX" id="sCR-TN-Hee"/>
                             <constraint firstItem="LQl-30-yEN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="su4-cR-xrm"/>
                             <constraint firstItem="wvw-Nx-B8l" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="u4v-Oh-aBe"/>
-                            <constraint firstItem="Cqo-gI-1KN" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="wbW-tz-t6Y"/>
+                            <constraint firstItem="Cqo-gI-1KN" firstAttribute="top" secondItem="6jO-SW-Nbe" secondAttribute="bottom" constant="8" symbolic="YES" id="uNx-Eb-Qyi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="myBg" destination="5EZ-qb-Rvc" id="sDf-uX-afh"/>
                         <outlet property="myLabel" destination="Cqo-gI-1KN" id="mh7-6n-Bqz"/>
                         <outlet property="myProgressView" destination="Fpc-rf-7Eb" id="iEC-pp-R0U"/>
+                        <outlet property="myProgressviewChangeByStepper" destination="6jO-SW-Nbe" id="3aQ-VY-qo0"/>
                         <outlet property="mySlider" destination="wvw-Nx-B8l" id="J5s-40-LjV"/>
                         <outlet property="myStepper" destination="LQl-30-yEN" id="lYq-HQ-mdn"/>
                         <outlet property="mySwitch" destination="lGH-tb-kYx" id="4aD-dl-hA6"/>
@@ -104,20 +112,34 @@
             </objects>
             <point key="canvasLocation" x="14.492753623188406" y="-34.239130434782609"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="k31-J8-gzz">
+        <!--Segment View Controller-->
+        <scene sceneID="CWp-8N-YgN">
             <objects>
-                <viewController id="O2U-2P-0LJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FaJ-Sl-M5K">
+                <viewController id="rrZ-bk-one" customClass="SegmentViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mBF-kF-jKP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="YCR-PF-tzl"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="u0d-pP-r0M">
+                                <rect key="frame" x="150" y="650" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="749-YY-fzM">
+                                <rect key="frame" x="87" y="124" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UEI-ar-577"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="phV-n3-IPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngD-2H-UQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="-55"/>
+            <point key="canvasLocation" x="787" y="-7"/>
         </scene>
     </scenes>
     <resources>
