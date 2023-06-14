@@ -20,6 +20,12 @@
 		52D1F8D52A333CD60030F5F1 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8D42A333CD60030F5F1 /* ButtonViewController.swift */; };
 		52FFFCDA2A3980A4005A66DD /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFFCD92A3980A4005A66DD /* Stepper.swift */; };
 		52FFFCDC2A3997BC005A66DD /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFFCDB2A3997BC005A66DD /* SegmentViewController.swift */; };
+		52FFFCDF2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FFFCDE2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard */; };
+		52FFFCE12A399EAE005A66DD /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFFCE02A399EAE005A66DD /* RegistrationViewController.swift */; };
+		52FFFCE32A399FF6005A66DD /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFFCE22A399FF6005A66DD /* ForgetPasswordViewController.swift */; };
+		52FFFCE52A39DE9D005A66DD /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFFCE42A39DE9D005A66DD /* ImagePickerViewController.swift */; };
+		52FFFCE72A39DEB5005A66DD /* ImagePickerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FFFCE62A39DEB5005A66DD /* ImagePickerStoryboard.storyboard */; };
+		52FFFCE92A3A124C005A66DD /* VideoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFFCE82A3A124C005A66DD /* VideoPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,12 @@
 		52D1F8D42A333CD60030F5F1 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		52FFFCD92A3980A4005A66DD /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
 		52FFFCDB2A3997BC005A66DD /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
+		52FFFCDE2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JobSeekAppStoryboard.storyboard; sourceTree = "<group>"; };
+		52FFFCE02A399EAE005A66DD /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		52FFFCE22A399FF6005A66DD /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		52FFFCE42A39DE9D005A66DD /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePickerViewController.swift; path = UIComponents/controllers/ImagePickerViewController.swift; sourceTree = SOURCE_ROOT; };
+		52FFFCE62A39DEB5005A66DD /* ImagePickerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePickerStoryboard.storyboard; sourceTree = "<group>"; };
+		52FFFCE82A3A124C005A66DD /* VideoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,12 @@
 		52FFFCDD2A399BF4005A66DD /* JobSeek */ = {
 			isa = PBXGroup;
 			children = (
+				52FFFCDE2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard */,
+				52FFFCE02A399EAE005A66DD /* RegistrationViewController.swift */,
+				52FFFCE22A399FF6005A66DD /* ForgetPasswordViewController.swift */,
+				52FFFCE42A39DE9D005A66DD /* ImagePickerViewController.swift */,
+				52FFFCE62A39DEB5005A66DD /* ImagePickerStoryboard.storyboard */,
+				52FFFCE82A3A124C005A66DD /* VideoPickerViewController.swift */,
 			);
 			path = JobSeek;
 			sourceTree = "<group>";
@@ -178,10 +196,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FFFCE72A39DEB5005A66DD /* ImagePickerStoryboard.storyboard in Resources */,
 				5254F0F32A374B0300A13B56 /* UISwitchStoryboard.storyboard in Resources */,
 				52D1F8CB2A332C250030F5F1 /* LaunchScreen.storyboard in Resources */,
 				52462FBF2A372CD200F037C7 /* Assets.xcassets in Resources */,
 				52D1F8C62A332C230030F5F1 /* Main.storyboard in Resources */,
+				52FFFCDF2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,11 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FFFCE32A399FF6005A66DD /* ForgetPasswordViewController.swift in Sources */,
 				5230F1712A36DE6A005E1419 /* Textfield.swift in Sources */,
 				52FFFCDC2A3997BC005A66DD /* SegmentViewController.swift in Sources */,
 				52D1F8D32A332CD50030F5F1 /* TextfieldViewController.swift in Sources */,
 				52D1F8C32A332C230030F5F1 /* ViewController.swift in Sources */,
+				52FFFCE12A399EAE005A66DD /* RegistrationViewController.swift in Sources */,
+				52FFFCE52A39DE9D005A66DD /* ImagePickerViewController.swift in Sources */,
 				52D1F8BF2A332C230030F5F1 /* AppDelegate.swift in Sources */,
+				52FFFCE92A3A124C005A66DD /* VideoPickerViewController.swift in Sources */,
 				52D1F8D52A333CD60030F5F1 /* ButtonViewController.swift in Sources */,
 				5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */,
 				52FFFCDA2A3980A4005A66DD /* Stepper.swift in Sources */,
