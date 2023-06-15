@@ -43,7 +43,7 @@ extension UITextField {
             let leftView = UIView()
             leftView.frame = CGRect.init(x: 0.0, y: 0.0, width: padding, height: self.frame.size.height)
             let imgView = UIImageView()
-            imgView.frame = CGRect.init(x: 10, y: 10, width: padding-20, height: self.frame.size.height - 20.0)
+            imgView.frame = CGRect.init(x: 20, y: 20, width: padding-35, height: self.frame.size.height - 35.0)
             imgView.tintColor = UIColor.black
             imgView.image = UIImage.init(named: imageView)
             leftView.addSubview(imgView)

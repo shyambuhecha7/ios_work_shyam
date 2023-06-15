@@ -71,7 +71,7 @@ class TextfieldViewController: UIViewController, UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("textFieldShouldReturn")
-        
+        self.resignFirstResponder()
         return true
     }// called when 'return' key pressed. return NO to ignore.
 

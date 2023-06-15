@@ -4,21 +4,27 @@ class ForgetPasswordViewController: UIViewController {
 
     @IBOutlet weak var mySegmentController: UISegmentedControl!
     
-    @IBOutlet weak var sagmentTextField: UITextField!
+   
+    @IBOutlet weak var emailTextfield: UITextField!
     
+    @IBOutlet weak var passwordTexfield: UITextField!
     @IBOutlet weak var leftImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        sagmentTextField.layer.borderWidth = 1.5
-        sagmentTextField.layer.borderColor = CGColor(red: 1, green: 1, blue: 1, alpha: 1)
-        sagmentTextField.layer.cornerRadius = 12
-       
         
+        addPropertyToTextfield(emailTextfield)
+        addPropertyToTextfield(passwordTexfield)
         
-        
+        setSegmentProperty(mySegmentController)
       
       
       
+    }
+    func addPropertyToTextfield(_ sender: UITextField) {
+        sender.layer.borderWidth = 1.5
+        sender.layer.borderColor = CGColor(red: 1, green: 1, blue: 1, alpha: 1)
+        sender.layer.cornerRadius = 12
     }
     
     @IBAction func setSegmentProperty(_ sender: UISegmentedControl) {
@@ -27,15 +33,18 @@ class ForgetPasswordViewController: UIViewController {
         
         switch mySegmentController.selectedSegmentIndex {
         case 0 :
-            sagmentTextField.placeholder = "Email"
-//             sagmentTextField.setLeftMarginInTextField(padding: 20.0)
-            sagmentTextField.setLeftPaddingWithImageInTextField(padding: 20.0, imageView: "mail")
+            emailTextfield.isHidden = false
+            passwordTexfield.isHidden = true
+//            sagmentTextField.setLeftMarginInTextField(padding: 20.0)
+            emailTextfield.setLeftPaddingWithImageInTextField(padding: 50.0, imageView: "mail")
         
         case 1 :
-            sagmentTextField.placeholder = "Phone"
-            sagmentTextField.setLeftPaddingWithImageInTextField(padding: 10.0, imageView: "password")
+            emailTextfield.isHidden = true
+            passwordTexfield.isHidden = false
+            passwordTexfield.setLeftPaddingWithImageInTextField(padding: 50.0, imageView: "password")
         default:
-            sagmentTextField.placeholder = "Phone"
+            emailTextfield.isEnabled = true
+            passwordTexfield.isHidden = true
         }
         
       

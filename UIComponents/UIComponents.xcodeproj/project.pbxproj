@@ -11,6 +11,10 @@
 		52462FBF2A372CD200F037C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52462FBE2A372CD200F037C7 /* Assets.xcassets */; };
 		5254F0F32A374B0300A13B56 /* UISwitchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5254F0F22A374B0300A13B56 /* UISwitchStoryboard.storyboard */; };
 		5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254F0F52A374B5800A13B56 /* SwitchViewController.swift */; };
+		526918CC2A3AE99400915330 /* PHPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526918CB2A3AE99400915330 /* PHPickerViewController.swift */; };
+		526918CE2A3B0D1600915330 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526918CD2A3B0D1600915330 /* ScrollViewController.swift */; };
+		526918D02A3B0D3800915330 /* ScrollViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */; };
+		52A5723D2A3B1A1100733A89 /* JobTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */; };
 		52D1F8BF2A332C230030F5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8BE2A332C230030F5F1 /* AppDelegate.swift */; };
 		52D1F8C12A332C230030F5F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */; };
 		52D1F8C32A332C230030F5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8C22A332C230030F5F1 /* ViewController.swift */; };
@@ -33,6 +37,10 @@
 		52462FBE2A372CD200F037C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5254F0F22A374B0300A13B56 /* UISwitchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISwitchStoryboard.storyboard; sourceTree = "<group>"; };
 		5254F0F52A374B5800A13B56 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		526918CB2A3AE99400915330 /* PHPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewController.swift; sourceTree = "<group>"; };
+		526918CD2A3B0D1600915330 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollViewStoryboard.storyboard; sourceTree = "<group>"; };
+		52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTypeViewController.swift; sourceTree = "<group>"; };
 		52D1F8BB2A332C230030F5F1 /* UIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D1F8BE2A332C230030F5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				5254F0F22A374B0300A13B56 /* UISwitchStoryboard.storyboard */,
+				526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -84,6 +93,7 @@
 		5254F0F42A374B2100A13B56 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				526918CD2A3B0D1600915330 /* ScrollViewController.swift */,
 				5254F0F52A374B5800A13B56 /* SwitchViewController.swift */,
 				52FFFCDB2A3997BC005A66DD /* SegmentViewController.swift */,
 			);
@@ -134,6 +144,8 @@
 				52FFFCE42A39DE9D005A66DD /* ImagePickerViewController.swift */,
 				52FFFCE62A39DEB5005A66DD /* ImagePickerStoryboard.storyboard */,
 				52FFFCE82A3A124C005A66DD /* VideoPickerViewController.swift */,
+				526918CB2A3AE99400915330 /* PHPickerViewController.swift */,
+				52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */,
 			);
 			path = JobSeek;
 			sourceTree = "<group>";
@@ -197,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FFFCE72A39DEB5005A66DD /* ImagePickerStoryboard.storyboard in Resources */,
+				526918D02A3B0D3800915330 /* ScrollViewStoryboard.storyboard in Resources */,
 				5254F0F32A374B0300A13B56 /* UISwitchStoryboard.storyboard in Resources */,
 				52D1F8CB2A332C250030F5F1 /* LaunchScreen.storyboard in Resources */,
 				52462FBF2A372CD200F037C7 /* Assets.xcassets in Resources */,
@@ -214,16 +227,19 @@
 			files = (
 				52FFFCE32A399FF6005A66DD /* ForgetPasswordViewController.swift in Sources */,
 				5230F1712A36DE6A005E1419 /* Textfield.swift in Sources */,
+				52A5723D2A3B1A1100733A89 /* JobTypeViewController.swift in Sources */,
 				52FFFCDC2A3997BC005A66DD /* SegmentViewController.swift in Sources */,
 				52D1F8D32A332CD50030F5F1 /* TextfieldViewController.swift in Sources */,
 				52D1F8C32A332C230030F5F1 /* ViewController.swift in Sources */,
 				52FFFCE12A399EAE005A66DD /* RegistrationViewController.swift in Sources */,
 				52FFFCE52A39DE9D005A66DD /* ImagePickerViewController.swift in Sources */,
+				526918CE2A3B0D1600915330 /* ScrollViewController.swift in Sources */,
 				52D1F8BF2A332C230030F5F1 /* AppDelegate.swift in Sources */,
 				52FFFCE92A3A124C005A66DD /* VideoPickerViewController.swift in Sources */,
 				52D1F8D52A333CD60030F5F1 /* ButtonViewController.swift in Sources */,
 				5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */,
 				52FFFCDA2A3980A4005A66DD /* Stepper.swift in Sources */,
+				526918CC2A3AE99400915330 /* PHPickerViewController.swift in Sources */,
 				52D1F8C12A332C230030F5F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
