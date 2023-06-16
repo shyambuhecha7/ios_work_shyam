@@ -1,26 +1,12 @@
 //
-//  ScrollViewController.swift
+//  UIScrollView.swift
 //  UIComponents
 //
-//  Created by Shyam Buhecha on 15/06/23.
+//  Created by Shyam Buhecha on 16/06/23.
 //
 
 import UIKit
 
-class ScrollViewController: UIViewController {
-
-    @IBOutlet weak var myScrollView: UIScrollView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.scrollViewWillBeginDecelerating(myScrollView)
-        myScrollView.isPagingEnabled = true
-      
-    }
- 
-    
-}
 extension ScrollViewController: UIScrollViewDelegate {
 
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -47,10 +33,10 @@ extension ScrollViewController: UIScrollViewDelegate {
         
     }
     public func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        scrollView.decelerationRate =  .fast
+        scrollView.DecelerationRate(rawValue:  CGFloat(2.0) )
     }
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
     }
 }
-
+    

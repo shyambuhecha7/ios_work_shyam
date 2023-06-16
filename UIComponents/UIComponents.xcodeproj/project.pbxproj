@@ -11,10 +11,15 @@
 		52462FBF2A372CD200F037C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52462FBE2A372CD200F037C7 /* Assets.xcassets */; };
 		5254F0F32A374B0300A13B56 /* UISwitchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5254F0F22A374B0300A13B56 /* UISwitchStoryboard.storyboard */; };
 		5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254F0F52A374B5800A13B56 /* SwitchViewController.swift */; };
+		526115382A3C975200305834 /* TableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526115372A3C975200305834 /* TableViewStoryboard.storyboard */; };
+		5261153A2A3C978300305834 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526115392A3C978300305834 /* TableViewViewController.swift */; };
+		526115422A3CBBCF00305834 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526115412A3CBBCF00305834 /* CompanyCell.swift */; };
 		526918CC2A3AE99400915330 /* PHPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526918CB2A3AE99400915330 /* PHPickerViewController.swift */; };
 		526918CE2A3B0D1600915330 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526918CD2A3B0D1600915330 /* ScrollViewController.swift */; };
 		526918D02A3B0D3800915330 /* ScrollViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */; };
 		52A5723D2A3B1A1100733A89 /* JobTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */; };
+		52BD32332A3C40E40058835E /* ScrollViewController in Sources */ = {isa = PBXBuildFile; fileRef = 52BD32322A3C40E40058835E /* ScrollViewController */; };
+		52BD32352A3C62F60058835E /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD32342A3C62F60058835E /* PagingViewController.swift */; };
 		52D1F8BF2A332C230030F5F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8BE2A332C230030F5F1 /* AppDelegate.swift */; };
 		52D1F8C12A332C230030F5F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */; };
 		52D1F8C32A332C230030F5F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8C22A332C230030F5F1 /* ViewController.swift */; };
@@ -37,10 +42,15 @@
 		52462FBE2A372CD200F037C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5254F0F22A374B0300A13B56 /* UISwitchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISwitchStoryboard.storyboard; sourceTree = "<group>"; };
 		5254F0F52A374B5800A13B56 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		526115372A3C975200305834 /* TableViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewStoryboard.storyboard; sourceTree = "<group>"; };
+		526115392A3C978300305834 /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
+		526115412A3CBBCF00305834 /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
 		526918CB2A3AE99400915330 /* PHPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewController.swift; sourceTree = "<group>"; };
 		526918CD2A3B0D1600915330 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollViewStoryboard.storyboard; sourceTree = "<group>"; };
 		52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTypeViewController.swift; sourceTree = "<group>"; };
+		52BD32322A3C40E40058835E /* ScrollViewController */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScrollViewController; sourceTree = "<group>"; };
+		52BD32342A3C62F60058835E /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		52D1F8BB2A332C230030F5F1 /* UIComponents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIComponents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D1F8BE2A332C230030F5F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +87,7 @@
 				52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */,
 				5230F1702A36DE6A005E1419 /* Textfield.swift */,
 				52FFFCD92A3980A4005A66DD /* Stepper.swift */,
+				52BD32322A3C40E40058835E /* ScrollViewController */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -86,6 +97,7 @@
 			children = (
 				5254F0F22A374B0300A13B56 /* UISwitchStoryboard.storyboard */,
 				526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */,
+				526115372A3C975200305834 /* TableViewStoryboard.storyboard */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -96,6 +108,8 @@
 				526918CD2A3B0D1600915330 /* ScrollViewController.swift */,
 				5254F0F52A374B5800A13B56 /* SwitchViewController.swift */,
 				52FFFCDB2A3997BC005A66DD /* SegmentViewController.swift */,
+				52BD32342A3C62F60058835E /* PagingViewController.swift */,
+				526115392A3C978300305834 /* TableViewViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -131,6 +145,7 @@
 				52D1F8C92A332C250030F5F1 /* LaunchScreen.storyboard */,
 				52462FBE2A372CD200F037C7 /* Assets.xcassets */,
 				52D1F8CC2A332C250030F5F1 /* Info.plist */,
+				526115412A3CBBCF00305834 /* CompanyCell.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -209,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FFFCE72A39DEB5005A66DD /* ImagePickerStoryboard.storyboard in Resources */,
+				526115382A3C975200305834 /* TableViewStoryboard.storyboard in Resources */,
 				526918D02A3B0D3800915330 /* ScrollViewStoryboard.storyboard in Resources */,
 				5254F0F32A374B0300A13B56 /* UISwitchStoryboard.storyboard in Resources */,
 				52D1F8CB2A332C250030F5F1 /* LaunchScreen.storyboard in Resources */,
@@ -231,6 +247,7 @@
 				52FFFCDC2A3997BC005A66DD /* SegmentViewController.swift in Sources */,
 				52D1F8D32A332CD50030F5F1 /* TextfieldViewController.swift in Sources */,
 				52D1F8C32A332C230030F5F1 /* ViewController.swift in Sources */,
+				52BD32352A3C62F60058835E /* PagingViewController.swift in Sources */,
 				52FFFCE12A399EAE005A66DD /* RegistrationViewController.swift in Sources */,
 				52FFFCE52A39DE9D005A66DD /* ImagePickerViewController.swift in Sources */,
 				526918CE2A3B0D1600915330 /* ScrollViewController.swift in Sources */,
@@ -239,7 +256,10 @@
 				52D1F8D52A333CD60030F5F1 /* ButtonViewController.swift in Sources */,
 				5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */,
 				52FFFCDA2A3980A4005A66DD /* Stepper.swift in Sources */,
+				526115422A3CBBCF00305834 /* CompanyCell.swift in Sources */,
 				526918CC2A3AE99400915330 /* PHPickerViewController.swift in Sources */,
+				5261153A2A3C978300305834 /* TableViewViewController.swift in Sources */,
+				52BD32332A3C40E40058835E /* ScrollViewController in Sources */,
 				52D1F8C12A332C230030F5F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
