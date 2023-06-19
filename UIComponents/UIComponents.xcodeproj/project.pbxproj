@@ -22,6 +22,17 @@
 		526918CC2A3AE99400915330 /* PHPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526918CB2A3AE99400915330 /* PHPickerViewController.swift */; };
 		526918CE2A3B0D1600915330 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526918CD2A3B0D1600915330 /* ScrollViewController.swift */; };
 		526918D02A3B0D3800915330 /* ScrollViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */; };
+		526C6D802A407E1F00B99386 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D7F2A407E1F00B99386 /* FirstViewController.swift */; };
+		526C6D822A407E5300B99386 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D812A407E5300B99386 /* SecondViewController.swift */; };
+		526C6D842A407E6400B99386 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D832A407E6400B99386 /* ThirdViewController.swift */; };
+		526C6D862A407E8000B99386 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D852A407E8000B99386 /* FourViewController.swift */; };
+		526C6D882A407E9000B99386 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D872A407E9000B99386 /* FiveViewController.swift */; };
+		526C6D8A2A407EA500B99386 /* SixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D892A407EA500B99386 /* SixViewController.swift */; };
+		526C6D912A40939E00B99386 /* NavStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C6D902A40939E00B99386 /* NavStoryboard.storyboard */; };
+		526C6D932A40959700B99386 /* MyFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D922A40959700B99386 /* MyFirstViewController.swift */; };
+		526C6D952A4096E600B99386 /* MySecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D942A4096E600B99386 /* MySecondViewController.swift */; };
+		526C6D972A40ABBB00B99386 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D962A40ABBB00B99386 /* StackViewController.swift */; };
+		526C6D992A40ABF100B99386 /* StackviewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C6D982A40ABF100B99386 /* StackviewStoryboard.storyboard */; };
 		52A5723D2A3B1A1100733A89 /* JobTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */; };
 		52BD32332A3C40E40058835E /* ScrollViewController in Sources */ = {isa = PBXBuildFile; fileRef = 52BD32322A3C40E40058835E /* ScrollViewController */; };
 		52BD32352A3C62F60058835E /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD32342A3C62F60058835E /* PagingViewController.swift */; };
@@ -32,6 +43,9 @@
 		52D1F8CB2A332C250030F5F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D1F8C92A332C250030F5F1 /* LaunchScreen.storyboard */; };
 		52D1F8D32A332CD50030F5F1 /* TextfieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8D22A332CD50030F5F1 /* TextfieldViewController.swift */; };
 		52D1F8D52A333CD60030F5F1 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1F8D42A333CD60030F5F1 /* ButtonViewController.swift */; };
+		52DAA35B2A405BD100629354 /* UITabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAA35A2A405BD100629354 /* UITabViewController.swift */; };
+		52DAA3692A40665600629354 /* UITabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAA3652A40665600629354 /* UITabViewController.swift */; };
+		52DAA36B2A40671100629354 /* TabbarWithNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DAA36A2A40671100629354 /* TabbarWithNavigation.storyboard */; };
 		52FFFCDA2A3980A4005A66DD /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFFCD92A3980A4005A66DD /* Stepper.swift */; };
 		52FFFCDC2A3997BC005A66DD /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FFFCDB2A3997BC005A66DD /* SegmentViewController.swift */; };
 		52FFFCDF2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FFFCDE2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard */; };
@@ -58,6 +72,17 @@
 		526918CB2A3AE99400915330 /* PHPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewController.swift; sourceTree = "<group>"; };
 		526918CD2A3B0D1600915330 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollViewStoryboard.storyboard; sourceTree = "<group>"; };
+		526C6D7F2A407E1F00B99386 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		526C6D812A407E5300B99386 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		526C6D832A407E6400B99386 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		526C6D852A407E8000B99386 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		526C6D872A407E9000B99386 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
+		526C6D892A407EA500B99386 /* SixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixViewController.swift; sourceTree = "<group>"; };
+		526C6D902A40939E00B99386 /* NavStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavStoryboard.storyboard; sourceTree = "<group>"; };
+		526C6D922A40959700B99386 /* MyFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstViewController.swift; sourceTree = "<group>"; };
+		526C6D942A4096E600B99386 /* MySecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySecondViewController.swift; sourceTree = "<group>"; };
+		526C6D962A40ABBB00B99386 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		526C6D982A40ABF100B99386 /* StackviewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackviewStoryboard.storyboard; sourceTree = "<group>"; };
 		52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTypeViewController.swift; sourceTree = "<group>"; };
 		52BD32322A3C40E40058835E /* ScrollViewController */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScrollViewController; sourceTree = "<group>"; };
 		52BD32342A3C62F60058835E /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +95,9 @@
 		52D1F8CC2A332C250030F5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D1F8D22A332CD50030F5F1 /* TextfieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldViewController.swift; sourceTree = "<group>"; };
 		52D1F8D42A333CD60030F5F1 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		52DAA35A2A405BD100629354 /* UITabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabViewController.swift; sourceTree = "<group>"; };
+		52DAA3652A40665600629354 /* UITabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabViewController.swift; sourceTree = "<group>"; };
+		52DAA36A2A40671100629354 /* TabbarWithNavigation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabbarWithNavigation.storyboard; sourceTree = "<group>"; };
 		52FFFCD92A3980A4005A66DD /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
 		52FFFCDB2A3997BC005A66DD /* SegmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		52FFFCDE2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = JobSeekAppStoryboard.storyboard; sourceTree = "<group>"; };
@@ -120,6 +148,7 @@
 				526918CF2A3B0D3800915330 /* ScrollViewStoryboard.storyboard */,
 				526115372A3C975200305834 /* TableViewStoryboard.storyboard */,
 				5239E4942A3DB5FB00432563 /* CollectionViewStoryboard.storyboard */,
+				526C6D982A40ABF100B99386 /* StackviewStoryboard.storyboard */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -133,13 +162,42 @@
 				52BD32342A3C62F60058835E /* PagingViewController.swift */,
 				526115392A3C978300305834 /* TableViewViewController.swift */,
 				5239E4962A3DB62200432563 /* CollectionViewController.swift */,
+				526C6D962A40ABBB00B99386 /* StackViewController.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		526C6D8B2A408BA900B99386 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				526C6D902A40939E00B99386 /* NavStoryboard.storyboard */,
+				526C6D942A4096E600B99386 /* MySecondViewController.swift */,
+				526C6D922A40959700B99386 /* MyFirstViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		52C8CC2A2A40369400BCC4BE /* Tabbar With Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				52DAA36A2A40671100629354 /* TabbarWithNavigation.storyboard */,
+				52DAA3652A40665600629354 /* UITabViewController.swift */,
+				52DAA35A2A405BD100629354 /* UITabViewController.swift */,
+				526C6D7F2A407E1F00B99386 /* FirstViewController.swift */,
+				526C6D812A407E5300B99386 /* SecondViewController.swift */,
+				526C6D832A407E6400B99386 /* ThirdViewController.swift */,
+				526C6D852A407E8000B99386 /* FourViewController.swift */,
+				526C6D872A407E9000B99386 /* FiveViewController.swift */,
+				526C6D892A407EA500B99386 /* SixViewController.swift */,
+			);
+			path = "Tabbar With Navigation";
 			sourceTree = "<group>";
 		};
 		52D1F8B22A332C230030F5F1 = {
 			isa = PBXGroup;
 			children = (
+				526C6D8B2A408BA900B99386 /* Navigation */,
+				52C8CC2A2A40369400BCC4BE /* Tabbar With Navigation */,
 				5239E48F2A3D981300432563 /* Cells */,
 				52D1F8BD2A332C230030F5F1 /* UIComponents */,
 				52D1F8BC2A332C230030F5F1 /* Products */,
@@ -247,7 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FFFCE72A39DEB5005A66DD /* ImagePickerStoryboard.storyboard in Resources */,
+				526C6D992A40ABF100B99386 /* StackviewStoryboard.storyboard in Resources */,
 				526115382A3C975200305834 /* TableViewStoryboard.storyboard in Resources */,
+				52DAA36B2A40671100629354 /* TabbarWithNavigation.storyboard in Resources */,
 				5239E49B2A3DC2E300432563 /* CollectionViewCell.xib in Resources */,
 				526918D02A3B0D3800915330 /* ScrollViewStoryboard.storyboard in Resources */,
 				5254F0F32A374B0300A13B56 /* UISwitchStoryboard.storyboard in Resources */,
@@ -256,6 +316,7 @@
 				5239E4932A3D984900432563 /* CompanyTableViewCell.xib in Resources */,
 				52D1F8C62A332C230030F5F1 /* Main.storyboard in Resources */,
 				5239E4952A3DB5FB00432563 /* CollectionViewStoryboard.storyboard in Resources */,
+				526C6D912A40939E00B99386 /* NavStoryboard.storyboard in Resources */,
 				52FFFCDF2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,12 +329,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				52FFFCE32A399FF6005A66DD /* ForgetPasswordViewController.swift in Sources */,
+				52DAA35B2A405BD100629354 /* UITabViewController.swift in Sources */,
+				526C6D862A407E8000B99386 /* FourViewController.swift in Sources */,
 				5230F1712A36DE6A005E1419 /* Textfield.swift in Sources */,
 				52A5723D2A3B1A1100733A89 /* JobTypeViewController.swift in Sources */,
 				52FFFCDC2A3997BC005A66DD /* SegmentViewController.swift in Sources */,
 				52D1F8D32A332CD50030F5F1 /* TextfieldViewController.swift in Sources */,
+				526C6D882A407E9000B99386 /* FiveViewController.swift in Sources */,
+				526C6D822A407E5300B99386 /* SecondViewController.swift in Sources */,
+				526C6D8A2A407EA500B99386 /* SixViewController.swift in Sources */,
 				52D1F8C32A332C230030F5F1 /* ViewController.swift in Sources */,
 				52BD32352A3C62F60058835E /* PagingViewController.swift in Sources */,
+				526C6D972A40ABBB00B99386 /* StackViewController.swift in Sources */,
 				52FFFCE12A399EAE005A66DD /* RegistrationViewController.swift in Sources */,
 				52FFFCE52A39DE9D005A66DD /* ImagePickerViewController.swift in Sources */,
 				526918CE2A3B0D1600915330 /* ScrollViewController.swift in Sources */,
@@ -284,9 +351,14 @@
 				52D1F8D52A333CD60030F5F1 /* ButtonViewController.swift in Sources */,
 				5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */,
 				52FFFCDA2A3980A4005A66DD /* Stepper.swift in Sources */,
+				526C6D842A407E6400B99386 /* ThirdViewController.swift in Sources */,
 				526918CC2A3AE99400915330 /* PHPickerViewController.swift in Sources */,
+				526C6D952A4096E600B99386 /* MySecondViewController.swift in Sources */,
 				5261153A2A3C978300305834 /* TableViewViewController.swift in Sources */,
+				526C6D802A407E1F00B99386 /* FirstViewController.swift in Sources */,
+				52DAA3692A40665600629354 /* UITabViewController.swift in Sources */,
 				5239E4972A3DB62200432563 /* CollectionViewController.swift in Sources */,
+				526C6D932A40959700B99386 /* MyFirstViewController.swift in Sources */,
 				52BD32332A3C40E40058835E /* ScrollViewController in Sources */,
 				52D1F8C12A332C230030F5F1 /* SceneDelegate.swift in Sources */,
 			);

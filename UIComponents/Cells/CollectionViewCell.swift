@@ -18,8 +18,5 @@ class CollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
     }
-    func configcell(data: Company){
-        companyImg.image = UIImage(named: data.companyImage!)
-        companyName.text = data.companyName
-    }
+   
 }
