@@ -27,6 +27,8 @@ class TableViewViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         tblCompanyList.delegate = self
         tblCompanyList.dataSource = self
+        
+        tblCompanyList.rowHeight = UITableView.automaticDimension
         tblCompanyList.register(UINib(nibName: "CompanyTableViewCell", bundle: nil), forCellReuseIdentifier: "CompanyTableViewCell")
     }
     
@@ -76,4 +78,5 @@ class TableViewViewController: UIViewController, UITableViewDelegate, UITableVie
         viewHeader.backgroundColor = .blue
         return viewHeader
     }
+    
 }

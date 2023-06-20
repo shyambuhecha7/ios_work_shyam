@@ -27,7 +27,7 @@
                                     <constraint firstAttribute="width" constant="100" id="GJq-6t-dDC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAf-eh-G42">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAf-eh-G42">
                                 <rect key="frame" x="54" y="124.66666666666667" width="42" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -36,7 +36,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PAf-eh-G42" firstAttribute="centerX" secondItem="16c-Xd-LpL" secondAttribute="centerX" id="9M4-V9-qkD"/>
                             <constraint firstItem="16c-Xd-LpL" firstAttribute="centerY" secondItem="h3D-l0-xLC" secondAttribute="centerY" id="Xfh-Kz-9KV"/>
                             <constraint firstItem="PAf-eh-G42" firstAttribute="top" secondItem="16c-Xd-LpL" secondAttribute="bottom" constant="-0.33333333333331439" id="eDi-Gl-EnK"/>
                             <constraint firstItem="16c-Xd-LpL" firstAttribute="centerX" secondItem="h3D-l0-xLC" secondAttribute="centerX" id="jvO-TP-5O8"/>

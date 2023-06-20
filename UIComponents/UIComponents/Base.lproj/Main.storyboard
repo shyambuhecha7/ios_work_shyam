@@ -114,7 +114,7 @@
         <!--Button View Controller-->
         <scene sceneID="2ME-vJ-Cvj">
             <objects>
-                <viewController id="9BP-9f-2mK" customClass="ButtonViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController keyboardType="on" id="9BP-9f-2mK" customClass="ButtonViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iSc-Ph-uGL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

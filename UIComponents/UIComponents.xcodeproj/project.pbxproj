@@ -33,6 +33,15 @@
 		526C6D952A4096E600B99386 /* MySecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D942A4096E600B99386 /* MySecondViewController.swift */; };
 		526C6D972A40ABBB00B99386 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C6D962A40ABBB00B99386 /* StackViewController.swift */; };
 		526C6D992A40ABF100B99386 /* StackviewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526C6D982A40ABF100B99386 /* StackviewStoryboard.storyboard */; };
+		526D106C2A41707A002DD970 /* PracticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D106A2A41707A002DD970 /* PracticeTableViewCell.swift */; };
+		526D106D2A41707A002DD970 /* PracticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526D106B2A41707A002DD970 /* PracticeTableViewCell.xib */; };
+		526D10702A4170FD002DD970 /* PracticeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D106E2A4170FD002DD970 /* PracticeTableViewController.swift */; };
+		526D10732A417482002DD970 /* PracticeTableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526D10722A417482002DD970 /* PracticeTableViewStoryboard.storyboard */; };
+		526D10762A41AA0F002DD970 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526D10752A41AA0F002DD970 /* LoginStoryboard.storyboard */; };
+		526D107A2A41AAE1002DD970 /* LoginNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D10792A41AAE1002DD970 /* LoginNavViewController.swift */; };
+		526D10802A41ABE4002DD970 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D107F2A41ABE4002DD970 /* SecondPageViewController.swift */; };
+		526D10822A41AE9D002DD970 /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D10812A41AE9D002DD970 /* FirstPageViewController.swift */; };
+		526D10862A41C2D1002DD970 /* MyThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D10852A41C2D1002DD970 /* MyThirdViewController.swift */; };
 		52A5723D2A3B1A1100733A89 /* JobTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */; };
 		52BD32332A3C40E40058835E /* ScrollViewController in Sources */ = {isa = PBXBuildFile; fileRef = 52BD32322A3C40E40058835E /* ScrollViewController */; };
 		52BD32352A3C62F60058835E /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD32342A3C62F60058835E /* PagingViewController.swift */; };
@@ -83,6 +92,15 @@
 		526C6D942A4096E600B99386 /* MySecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySecondViewController.swift; sourceTree = "<group>"; };
 		526C6D962A40ABBB00B99386 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		526C6D982A40ABF100B99386 /* StackviewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackviewStoryboard.storyboard; sourceTree = "<group>"; };
+		526D106A2A41707A002DD970 /* PracticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewCell.swift; sourceTree = "<group>"; };
+		526D106B2A41707A002DD970 /* PracticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PracticeTableViewCell.xib; sourceTree = "<group>"; };
+		526D106E2A4170FD002DD970 /* PracticeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTableViewController.swift; sourceTree = "<group>"; };
+		526D10722A417482002DD970 /* PracticeTableViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PracticeTableViewStoryboard.storyboard; sourceTree = "<group>"; };
+		526D10752A41AA0F002DD970 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		526D10792A41AAE1002DD970 /* LoginNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavViewController.swift; sourceTree = "<group>"; };
+		526D107F2A41ABE4002DD970 /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
+		526D10812A41AE9D002DD970 /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		526D10852A41C2D1002DD970 /* MyThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThirdViewController.swift; sourceTree = "<group>"; };
 		52A5723C2A3B1A1100733A89 /* JobTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTypeViewController.swift; sourceTree = "<group>"; };
 		52BD32322A3C40E40058835E /* ScrollViewController */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScrollViewController; sourceTree = "<group>"; };
 		52BD32342A3C62F60058835E /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -173,8 +191,31 @@
 				526C6D902A40939E00B99386 /* NavStoryboard.storyboard */,
 				526C6D942A4096E600B99386 /* MySecondViewController.swift */,
 				526C6D922A40959700B99386 /* MyFirstViewController.swift */,
+				526D10852A41C2D1002DD970 /* MyThirdViewController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		526D105B2A416F58002DD970 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				526D106A2A41707A002DD970 /* PracticeTableViewCell.swift */,
+				526D106E2A4170FD002DD970 /* PracticeTableViewController.swift */,
+				526D106B2A41707A002DD970 /* PracticeTableViewCell.xib */,
+				526D10722A417482002DD970 /* PracticeTableViewStoryboard.storyboard */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		526D10742A41A9D9002DD970 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				526D10752A41AA0F002DD970 /* LoginStoryboard.storyboard */,
+				526D10792A41AAE1002DD970 /* LoginNavViewController.swift */,
+				526D107F2A41ABE4002DD970 /* SecondPageViewController.swift */,
+				526D10812A41AE9D002DD970 /* FirstPageViewController.swift */,
+			);
+			path = LoginScreen;
 			sourceTree = "<group>";
 		};
 		52C8CC2A2A40369400BCC4BE /* Tabbar With Navigation */ = {
@@ -196,6 +237,8 @@
 		52D1F8B22A332C230030F5F1 = {
 			isa = PBXGroup;
 			children = (
+				526D10742A41A9D9002DD970 /* LoginScreen */,
+				526D105B2A416F58002DD970 /* Practice */,
 				526C6D8B2A408BA900B99386 /* Navigation */,
 				52C8CC2A2A40369400BCC4BE /* Tabbar With Navigation */,
 				5239E48F2A3D981300432563 /* Cells */,
@@ -308,16 +351,19 @@
 				526C6D992A40ABF100B99386 /* StackviewStoryboard.storyboard in Resources */,
 				526115382A3C975200305834 /* TableViewStoryboard.storyboard in Resources */,
 				52DAA36B2A40671100629354 /* TabbarWithNavigation.storyboard in Resources */,
+				526D10732A417482002DD970 /* PracticeTableViewStoryboard.storyboard in Resources */,
 				5239E49B2A3DC2E300432563 /* CollectionViewCell.xib in Resources */,
 				526918D02A3B0D3800915330 /* ScrollViewStoryboard.storyboard in Resources */,
 				5254F0F32A374B0300A13B56 /* UISwitchStoryboard.storyboard in Resources */,
 				52D1F8CB2A332C250030F5F1 /* LaunchScreen.storyboard in Resources */,
+				526D106D2A41707A002DD970 /* PracticeTableViewCell.xib in Resources */,
 				52462FBF2A372CD200F037C7 /* Assets.xcassets in Resources */,
 				5239E4932A3D984900432563 /* CompanyTableViewCell.xib in Resources */,
 				52D1F8C62A332C230030F5F1 /* Main.storyboard in Resources */,
 				5239E4952A3DB5FB00432563 /* CollectionViewStoryboard.storyboard in Resources */,
 				526C6D912A40939E00B99386 /* NavStoryboard.storyboard in Resources */,
 				52FFFCDF2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard in Resources */,
+				526D10762A41AA0F002DD970 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526D107A2A41AAE1002DD970 /* LoginNavViewController.swift in Sources */,
 				52FFFCE32A399FF6005A66DD /* ForgetPasswordViewController.swift in Sources */,
 				52DAA35B2A405BD100629354 /* UITabViewController.swift in Sources */,
 				526C6D862A407E8000B99386 /* FourViewController.swift in Sources */,
@@ -345,14 +392,19 @@
 				52FFFCE52A39DE9D005A66DD /* ImagePickerViewController.swift in Sources */,
 				526918CE2A3B0D1600915330 /* ScrollViewController.swift in Sources */,
 				5239E49A2A3DC2E300432563 /* CollectionViewCell.swift in Sources */,
+				526D10822A41AE9D002DD970 /* FirstPageViewController.swift in Sources */,
+				526D10862A41C2D1002DD970 /* MyThirdViewController.swift in Sources */,
 				5239E4922A3D984900432563 /* CompanyTableViewCell.swift in Sources */,
 				52D1F8BF2A332C230030F5F1 /* AppDelegate.swift in Sources */,
 				52FFFCE92A3A124C005A66DD /* VideoPickerViewController.swift in Sources */,
+				526D106C2A41707A002DD970 /* PracticeTableViewCell.swift in Sources */,
 				52D1F8D52A333CD60030F5F1 /* ButtonViewController.swift in Sources */,
 				5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */,
+				526D10702A4170FD002DD970 /* PracticeTableViewController.swift in Sources */,
 				52FFFCDA2A3980A4005A66DD /* Stepper.swift in Sources */,
 				526C6D842A407E6400B99386 /* ThirdViewController.swift in Sources */,
 				526918CC2A3AE99400915330 /* PHPickerViewController.swift in Sources */,
+				526D10802A41ABE4002DD970 /* SecondPageViewController.swift in Sources */,
 				526C6D952A4096E600B99386 /* MySecondViewController.swift in Sources */,
 				5261153A2A3C978300305834 /* TableViewViewController.swift in Sources */,
 				526C6D802A407E1F00B99386 /* FirstViewController.swift in Sources */,

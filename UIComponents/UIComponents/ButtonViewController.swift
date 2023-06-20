@@ -25,7 +25,7 @@ class ButtonViewController: UIViewController,UITextFieldDelegate {
 
     }
     
-    @IBAction func configureButton(_ sender: UIButton) {
+@IBAction func configureButton(_ sender: UIButton) {
         sender.setTitle("bjkhrw", for: .selected)
     }
     //textfield
@@ -45,7 +45,8 @@ class ButtonViewController: UIViewController,UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        textField.becomeFirstResponder()
+        nameOfUSer.resignFirstResponder()
+        stackOfUser.becomeFirstResponder()
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

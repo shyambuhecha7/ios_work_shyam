@@ -58,6 +58,6 @@ extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //this for horizontal scrolling :
         //CGSize( width: 150,height: (collectionView.frame.height / 2 - 5))
-        return CGSize(width: collectionView.frame.width / 2 - 10, height: 150)
+        return CGSize(width: collectionView.frame.size.width, height: 150)
     }
 }

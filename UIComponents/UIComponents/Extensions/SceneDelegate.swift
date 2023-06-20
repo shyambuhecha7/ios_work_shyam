@@ -16,8 +16,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
-    }
+        guard let winScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: winScene)
+        //For NavStoryBoard
+//        let view =  UIStoryboard.init(name: "NavStoryboard", bundle: nil).instantiateViewController(withIdentifier: "MyFirstViewController")
+//        let navigationController = UINavigationController(rootViewController: view)
+      //  window?.rootViewController = navigationController
+       // window?.makeKeyAndVisible()
+        
+        //For Login StoryBoard
+        let view =  UIStoryboard.init(name: "NavStoryboard", bundle: Bundle.main).instantiateViewController(withIdentifier: "MyFirstViewController")
+        let navigationController = UINavigationController(rootViewController: view)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    } 
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
@@ -45,6 +57,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    //add
+    func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        if (UserDefaults.standard.string(forKey: "user-name") != nil)  {
+            guard let window = self.window else {
+                return
+            }
+            
+            // change the root view controller to your specific view controller
+            let storyboard = UIStoryboard(name: "NavStoryboard", bundle: nil)
+            let loginNavController = storyboard.instantiateViewController(identifier: "ThirdViewController")
+            window.rootViewController = loginNavController
+        }
+        
     }
 
 

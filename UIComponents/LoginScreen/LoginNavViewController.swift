@@ -1,23 +1,23 @@
 //
-//  MySecondViewController.swift
+//  LoginNavViewController.swift
 //  UIComponents
 //
-//  Created by Shyam Buhecha on 19/06/23.
+//  Created by Shyam Buhecha on 20/06/23.
 //
 
 import UIKit
 
-class MySecondViewController: UIViewController {
+class LoginNavViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
     }
     
-    @IBAction func gotoThird(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "NavStoryboard", bundle:nil)
-        guard let thirdVC = storyBoard.instantiateViewController(withIdentifier: "MyThirdViewController") as? MyThirdViewController else {return}
-        self.navigationController?.pushViewController(thirdVC, animated: true)
+    @IBAction func goToFirstPage(_ sender: Any) {
+        guard let vc =  storyboard?.instantiateViewController(withIdentifier: "FirstPageViewController") as? FirstPageViewController else { return }
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     /*
