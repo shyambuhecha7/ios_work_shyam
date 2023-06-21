@@ -17,6 +17,7 @@ class MyFirstViewController: UIViewController , UITextFieldDelegate{
         
         userName.delegate = self
         userPassword.delegate = self
+        
 
     }
     
@@ -27,6 +28,10 @@ class MyFirstViewController: UIViewController , UITextFieldDelegate{
         UserDefaults.standard.set(userName.text, forKey: "user-name")
         UserDefaults.standard.set(userPassword.text, forKey: "user-password")
         
+    }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+    
+        return true
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
