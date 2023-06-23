@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnHelp: UIButton!
     @IBOutlet var vc: UIView!
     
+    @IBOutlet weak var btnopenshhet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
    
@@ -31,19 +32,29 @@ class ViewController: UIViewController {
         backButton.setBackgroundImage(UIImage(named: Images.icon), for: .normal, barMetrics: .default) 
         self.navigationItem.setLeftBarButton(backButton, animated: false)
     }
+    
+    @objc func openBottomSheet() {
+        let alertController = UIAlertController(title: BottomSheetConstants.title, message: BottomSheetConstants.message, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: BottomSheetConstants.cancel, style: .cancel){ _ in
+            self.btnopenshhet.setImage(UIImage(named: Images.off), for: .normal)
+        })
+        alertController.addAction(UIAlertAction(title: BottomSheetConstants.switchNow, style: .default,handler: nil))
+     
+        if let popoverController =  alertController.popoverPresentationController {
+            popoverController.sourceView = self.view
+            popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+            popoverController.permittedArrowDirections = []
+        }
+        self.present(alertController, animated: true, completion: nil)
+       
+    
+    }
 
     var num = true
     @IBAction func clickOnButton(_ sender: UIButton) {
-        if num {
-            sender.setImage(UIImage(named: Images.on), for: .normal)
-            bottomView.isHidden = false
-            num.toggle()
-        }else {
-            sender.setImage(UIImage(named: Images.off), for: .normal)
-            bottomView.isHidden = true
-            num.toggle()
-        }
-    }
+       sender.setImage(UIImage(named: Images.on), for: .normal)
+       openBottomSheet()
+      }
 }
 
 extension ViewController: UITableViewDataSource{
@@ -98,3 +109,4 @@ extension ViewController: UITableViewDelegate {
         print("You deselected cell #\(indexPath.row)!")
     }
 }
+

@@ -1,10 +1,3 @@
-//
-//  Constant.swift
-//  ktproject
-//
-//  Created by Shyam Buhecha on 22/06/23.
-//
-
 import Foundation
 
 struct Constant {
@@ -18,11 +11,10 @@ struct Images {
     static let img = "img"
     static let lightblack = "lightblack"
     static let menu1 = "Menu 1"
-    static let menu = "menu"
+    static let menu = "Menu"
     static let ring = "ring"
     static let secImg = "secImg"
     static let thumpimage = "thumpimage"
-    
 }
 
 struct SettingsTitles {
@@ -39,4 +31,11 @@ struct Text {
 
 struct NibName {
     static let tableViewCell = "TableViewCell"
+}
+
+struct BottomSheetConstants {
+    static let cancel = "Cancel"
+    static let title = "Switch Account"
+    static let switchNow = "Switch Now"
+    static let message = "You are about to switch to valet account. Are you sure you want switch?"
 }

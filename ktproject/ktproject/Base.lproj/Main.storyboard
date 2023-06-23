@@ -208,6 +208,7 @@
                         <outlet property="bottomView" destination="vYU-4O-O22" id="zkx-5P-TiR"/>
                         <outlet property="btnCancle" destination="eCh-TA-Q7B" id="FmN-cd-yxJ"/>
                         <outlet property="btnHelp" destination="Qs6-yj-kef" id="RR8-Qj-n5l"/>
+                        <outlet property="btnopenshhet" destination="694-P1-QhA" id="68b-Of-fXu"/>
                         <outlet property="tblSetting" destination="pXi-KU-cI8" id="Ec6-QM-AVI"/>
                         <outlet property="vc" destination="8bC-Xf-vdC" id="Mn5-lE-ziu"/>
                     </connections>
