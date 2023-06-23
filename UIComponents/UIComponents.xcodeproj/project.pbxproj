@@ -17,6 +17,9 @@
 		52462FBF2A372CD200F037C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52462FBE2A372CD200F037C7 /* Assets.xcassets */; };
 		5254F0F32A374B0300A13B56 /* UISwitchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5254F0F22A374B0300A13B56 /* UISwitchStoryboard.storyboard */; };
 		5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254F0F52A374B5800A13B56 /* SwitchViewController.swift */; };
+		525FE77F2A44688A00E1FE37 /* BottomNavStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525FE77E2A44688A00E1FE37 /* BottomNavStoryboard.storyboard */; };
+		525FE7872A446B5E00E1FE37 /* BottonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525FE7862A446B5E00E1FE37 /* BottonViewController.swift */; };
+		525FE7892A446FC400E1FE37 /* SheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525FE7882A446FC400E1FE37 /* SheetViewController.swift */; };
 		526115382A3C975200305834 /* TableViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526115372A3C975200305834 /* TableViewStoryboard.storyboard */; };
 		5261153A2A3C978300305834 /* TableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526115392A3C978300305834 /* TableViewViewController.swift */; };
 		526918CC2A3AE99400915330 /* PHPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526918CB2A3AE99400915330 /* PHPickerViewController.swift */; };
@@ -76,6 +79,9 @@
 		52462FBE2A372CD200F037C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5254F0F22A374B0300A13B56 /* UISwitchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UISwitchStoryboard.storyboard; sourceTree = "<group>"; };
 		5254F0F52A374B5800A13B56 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		525FE77E2A44688A00E1FE37 /* BottomNavStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomNavStoryboard.storyboard; sourceTree = "<group>"; };
+		525FE7862A446B5E00E1FE37 /* BottonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonViewController.swift; sourceTree = "<group>"; };
+		525FE7882A446FC400E1FE37 /* SheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewController.swift; sourceTree = "<group>"; };
 		526115372A3C975200305834 /* TableViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewStoryboard.storyboard; sourceTree = "<group>"; };
 		526115392A3C978300305834 /* TableViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewController.swift; sourceTree = "<group>"; };
 		526918CB2A3AE99400915330 /* PHPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +146,6 @@
 		5230F16F2A36DE3B005E1419 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */,
 				5230F1702A36DE6A005E1419 /* Textfield.swift */,
 				52FFFCD92A3980A4005A66DD /* Stepper.swift */,
 				52BD32322A3C40E40058835E /* ScrollViewController */,
@@ -183,6 +188,16 @@
 				526C6D962A40ABBB00B99386 /* StackViewController.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		525FE77D2A44683200E1FE37 /* BottomNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				525FE77E2A44688A00E1FE37 /* BottomNavStoryboard.storyboard */,
+				525FE7862A446B5E00E1FE37 /* BottonViewController.swift */,
+				525FE7882A446FC400E1FE37 /* SheetViewController.swift */,
+			);
+			path = BottomNavigation;
 			sourceTree = "<group>";
 		};
 		526C6D8B2A408BA900B99386 /* Navigation */ = {
@@ -237,6 +252,7 @@
 		52D1F8B22A332C230030F5F1 = {
 			isa = PBXGroup;
 			children = (
+				525FE77D2A44683200E1FE37 /* BottomNavigation */,
 				526D10742A41A9D9002DD970 /* LoginScreen */,
 				526D105B2A416F58002DD970 /* Practice */,
 				526C6D8B2A408BA900B99386 /* Navigation */,
@@ -263,6 +279,7 @@
 				5254F0F12A374AC600A13B56 /* components */,
 				5230F16F2A36DE3B005E1419 /* Extensions */,
 				52D1F8BE2A332C230030F5F1 /* AppDelegate.swift */,
+				52D1F8C02A332C230030F5F1 /* SceneDelegate.swift */,
 				52D1F8C22A332C230030F5F1 /* ViewController.swift */,
 				52D1F8C42A332C230030F5F1 /* Main.storyboard */,
 				52D1F8D42A333CD60030F5F1 /* ButtonViewController.swift */,
@@ -361,6 +378,7 @@
 				5239E4932A3D984900432563 /* CompanyTableViewCell.xib in Resources */,
 				52D1F8C62A332C230030F5F1 /* Main.storyboard in Resources */,
 				5239E4952A3DB5FB00432563 /* CollectionViewStoryboard.storyboard in Resources */,
+				525FE77F2A44688A00E1FE37 /* BottomNavStoryboard.storyboard in Resources */,
 				526C6D912A40939E00B99386 /* NavStoryboard.storyboard in Resources */,
 				52FFFCDF2A399EA4005A66DD /* JobSeekAppStoryboard.storyboard in Resources */,
 				526D10762A41AA0F002DD970 /* LoginStoryboard.storyboard in Resources */,
@@ -398,8 +416,10 @@
 				52D1F8BF2A332C230030F5F1 /* AppDelegate.swift in Sources */,
 				52FFFCE92A3A124C005A66DD /* VideoPickerViewController.swift in Sources */,
 				526D106C2A41707A002DD970 /* PracticeTableViewCell.swift in Sources */,
+				525FE7892A446FC400E1FE37 /* SheetViewController.swift in Sources */,
 				52D1F8D52A333CD60030F5F1 /* ButtonViewController.swift in Sources */,
 				5254F0F62A374B5800A13B56 /* SwitchViewController.swift in Sources */,
+				525FE7872A446B5E00E1FE37 /* BottonViewController.swift in Sources */,
 				526D10702A4170FD002DD970 /* PracticeTableViewController.swift in Sources */,
 				52FFFCDA2A3980A4005A66DD /* Stepper.swift in Sources */,
 				526C6D842A407E6400B99386 /* ThirdViewController.swift in Sources */,
