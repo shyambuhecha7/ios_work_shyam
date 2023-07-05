@@ -68,7 +68,7 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell =  tblSetting.dequeueReusableCell(withIdentifier: NibName.tableViewCell, for: indexPath) as! TableViewCell
+        guard let cell =  tblSetting.dequeueReusableCell(withIdentifier: NibName.tableViewCell, for: indexPath) as? TableViewCell else { return UITableViewCell() }
         let oneCell = sectionData[indexPath.section][indexPath.row]
         cell.settingImg.image = UIImage(named: oneCell.settingImg)
         cell.lblSettingTitle.text = oneCell.settingName
