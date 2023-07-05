@@ -54,12 +54,12 @@ class ViewController: UIViewController {
 }
 
     func  postRequest(){
-        let url = URL(string: "https://reqres.in/api/users?page=2")!
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        let bodydata = ""
-        
+//        let url = URL(string: "https://reqres.in/api/users?page=2")!
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//        let bodydata = ""
+//        
         
     }
 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSWebService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8k-cN-LWy">
+                                <rect key="frame" x="31.333333333333343" y="197" width="330.33333333333326" height="50"/>
+                                <color key="backgroundColor" red="0.88521298569999995" green="1" blue="0.83243926739999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sZF-xo-DY5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ThD-Rc-vA5">
+                                <rect key="frame" x="31.333333333333343" y="271" width="330.33333333333326" height="50"/>
+                                <color key="backgroundColor" red="0.88521298569999995" green="1" blue="0.83243926739999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqq-aK-ABh">
+                                <rect key="frame" x="31.333333333333343" y="388" width="330.33333333333326" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l0w-UW-iq7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                                <connections>
+                                    <action selector="registerData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Feq-JT-8Fe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ThD-Rc-vA5" firstAttribute="height" secondItem="u8k-cN-LWy" secondAttribute="height" id="2VJ-MX-RgS"/>
+                            <constraint firstItem="Rqq-aK-ABh" firstAttribute="leading" secondItem="ThD-Rc-vA5" secondAttribute="leading" id="57e-0Y-4Bj"/>
+                            <constraint firstItem="Rqq-aK-ABh" firstAttribute="trailing" secondItem="ThD-Rc-vA5" secondAttribute="trailing" id="AOe-wR-on1"/>
+                            <constraint firstItem="ThD-Rc-vA5" firstAttribute="width" secondItem="u8k-cN-LWy" secondAttribute="width" id="ED4-0e-f0i"/>
+                            <constraint firstItem="ThD-Rc-vA5" firstAttribute="centerX" secondItem="u8k-cN-LWy" secondAttribute="centerX" id="FDe-Qi-ln4"/>
+                            <constraint firstItem="u8k-cN-LWy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="I14-63-qhf"/>
+                            <constraint firstItem="ThD-Rc-vA5" firstAttribute="top" secondItem="u8k-cN-LWy" secondAttribute="bottom" constant="24" id="Oj1-Uv-1tn"/>
+                            <constraint firstItem="u8k-cN-LWy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.84" id="Pxr-2N-6da"/>
+                            <constraint firstItem="u8k-cN-LWy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UJu-iJ-X0i"/>
+                            <constraint firstItem="Rqq-aK-ABh" firstAttribute="top" secondItem="ThD-Rc-vA5" secondAttribute="bottom" constant="67" id="yvD-8d-gfk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfEmail" destination="u8k-cN-LWy" id="GeU-34-7fS"/>
+                        <outlet property="tfPassword" destination="ThD-Rc-vA5" id="7QZ-pC-qqV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576" y="-58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

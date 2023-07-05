@@ -36,6 +36,7 @@ class RegisterViewController: UIViewController {
         guard let url = URL(string: "https://reqres.in/api/register") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         do {
@@ -51,6 +52,9 @@ class RegisterViewController: UIViewController {
                 print("error: \(error)")
                 return
             }
+            
+            guard let response = response else {return}
+            print("response : \(response)")
             
             if let data = data {
                 do{
