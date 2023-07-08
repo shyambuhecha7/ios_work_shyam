@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         
         var email: String? = tfEmail.text
         var password: String? = tfPassword.text
-        var user = User(email: email, password: password)
+        var user = User(email: email!, password: password!)
         
     }
     
@@ -47,12 +47,12 @@ class ViewController: UIViewController {
                 print("data : \(data)")
             }
             
-            do{
-                var encodeData = try JSONEncoder().encode(data)
-                print("encodeData: \(encodeData)")
-            }catch{
-                print("error : \(error)")
-            }
+//            do{
+//                var encodeData = try JSONEncoder().encode(data[)
+//                print("encodeData: \(encodeData)")
+//            }catch{
+//                print("error : \(error)")
+//            }
         }
         task.resume()
         
