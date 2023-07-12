@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         postUserData()
-        
     }
   
     @IBAction func registerData(_ sender: Any) {
@@ -32,7 +31,7 @@ class ViewController: UIViewController {
     }
     
     func postUserData() {
-        let url = URL(string: "https://reqres.in/api/register")!
+        guard let url = URL(string: "https://reqres.in/api/register") else {return}
         var request = URLRequest(url: url)
         
         request.httpMethod = "POST"
