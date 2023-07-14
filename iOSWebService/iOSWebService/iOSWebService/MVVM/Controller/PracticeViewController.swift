@@ -28,7 +28,7 @@ class PracticeViewController: UIViewController {
                 }
                 
                 do{
-                    var json = try JSONSerialization.jsonObject(with: responseData, options: [])
+                    let json = try JSONSerialization.jsonObject(with: responseData, options: [])
                     print("json: \(json)")
                 }catch{
                     print("Error: \(error.localizedDescription)")

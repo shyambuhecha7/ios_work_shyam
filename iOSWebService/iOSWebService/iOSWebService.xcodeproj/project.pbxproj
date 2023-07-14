@@ -130,8 +130,8 @@
 		52001F332A55685400C079C1 /* iOSWebService */ = {
 			isa = PBXGroup;
 			children = (
+				525433022A61046200774A13 /* Controller */,
 				523BF0482A598CDB004725CE /* Cells */,
-				523BF0462A598C60004725CE /* VC */,
 				523BF0452A598BF6004725CE /* AppDelegate */,
 				523BF0432A598B28004725CE /* MVVM */,
 				523BF0422A598AB1004725CE /* Storyboard */,
@@ -183,21 +183,12 @@
 		523BF0432A598B28004725CE /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				525433032A61049800774A13 /* Controller */,
 				52AB7D9C2A5816FA000E7A1D /* Models */,
 				523BF03E2A5988D0004725CE /* View */,
-				523BF0442A598B4B004725CE /* ViewController */,
 				523BF03F2A5988DD004725CE /* ViewModel */,
 			);
 			path = MVVM;
-			sourceTree = "<group>";
-		};
-		523BF0442A598B4B004725CE /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5290B7692A5ECB000082F149 /* PracticeViewController.swift */,
-				523BF0362A593788004725CE /* TableViewVC.swift */,
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		523BF0452A598BF6004725CE /* AppDelegate */ = {
@@ -209,16 +200,6 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		523BF0462A598C60004725CE /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				52001F382A55685400C079C1 /* ViewController.swift */,
-				528397002A56775F007FDD3C /* PostViewController.swift */,
-				52AB7D9D2A5821E4000E7A1D /* AlamoFireGertPostVC.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
 		523BF0482A598CDB004725CE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +207,25 @@
 				5290B7652A5EC88D0082F149 /* CustomTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		525433022A61046200774A13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52AB7D9D2A5821E4000E7A1D /* AlamoFireGertPostVC.swift */,
+				528397002A56775F007FDD3C /* PostViewController.swift */,
+				52001F382A55685400C079C1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		525433032A61049800774A13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				523BF0362A593788004725CE /* TableViewVC.swift */,
+				5290B7692A5ECB000082F149 /* PracticeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		52AB7D892A57DEBA000E7A1D /* mvvmWithWebservice */ = {
