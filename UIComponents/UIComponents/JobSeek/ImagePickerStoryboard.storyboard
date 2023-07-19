@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4d1-Hg-DwE">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Picker View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ImagePickerViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgimg" translatesAutoresizingMaskIntoConstraints="NO" id="9UW-Zo-sSR">
+                                <rect key="frame" x="0.0" y="59" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-jM-t1P">
+                                <rect key="frame" x="0.0" y="569" width="393" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="square.and.arrow.up" catalog="system" title="Select Image">
+                                    <color key="baseBackgroundColor" systemColor="linkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectPhotoPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BRa-BM-zzs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9UW-Zo-sSR" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" id="E9b-t5-Z9N"/>
+                            <constraint firstItem="9UW-Zo-sSR" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="Ns9-hO-n9G"/>
+                            <constraint firstItem="9UW-Zo-sSR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="QHy-jA-0h3"/>
+                            <constraint firstItem="5eh-jM-t1P" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="U7l-Du-WIV"/>
+                            <constraint firstItem="9UW-Zo-sSR" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="n3G-bz-ehb"/>
+                            <constraint firstItem="5eh-jM-t1P" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="510" id="ovS-sb-mxZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="9UW-Zo-sSR" id="XuT-jW-0hE"/>
+                        <outlet property="selectBtn" destination="5eh-jM-t1P" id="gMO-eA-1GD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="8bd-NQ-W67">
+            <objects>
+                <viewController id="4d1-Hg-DwE" customClass="PHPickerViewController" customModule="UIComponents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xG2-9v-ORX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgimg" translatesAutoresizingMaskIntoConstraints="NO" id="hyL-iw-p5e">
+                                <rect key="frame" x="37" y="59" width="319" height="404"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbw-o1-c4t">
+                                <rect key="frame" x="171" y="522" width="50" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="selectImage:" destination="4d1-Hg-DwE" eventType="touchUpInside" id="fhk-8Q-gvu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NTh-1p-d8s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dbw-o1-c4t" firstAttribute="top" secondItem="hyL-iw-p5e" secondAttribute="bottom" constant="59" id="BqV-7a-jW6"/>
+                            <constraint firstItem="hyL-iw-p5e" firstAttribute="leading" secondItem="NTh-1p-d8s" secondAttribute="leading" constant="37" id="MY3-gy-8J5"/>
+                            <constraint firstItem="Dbw-o1-c4t" firstAttribute="centerX" secondItem="hyL-iw-p5e" secondAttribute="centerX" id="QhP-tA-rb6"/>
+                            <constraint firstItem="hyL-iw-p5e" firstAttribute="centerX" secondItem="NTh-1p-d8s" secondAttribute="centerX" id="TKo-td-ft2"/>
+                            <constraint firstItem="hyL-iw-p5e" firstAttribute="top" secondItem="NTh-1p-d8s" secondAttribute="top" id="kET-Mt-wPJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="hyL-iw-p5e" id="22g-Gr-c48"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFN-r5-z9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.52671755725191" y="25.35211267605634"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgimg" width="719" height="404"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
