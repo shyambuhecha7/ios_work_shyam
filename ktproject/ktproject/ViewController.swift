@@ -10,8 +10,6 @@ class ViewController: UIViewController {
     let sectionData = [[data(settingImg: Images.img, settingName: SettingsTitles.title1,btnStatusImg: Images.on),data(settingImg: Images.secImg, settingName: SettingsTitles.title2,btnStatusImg: Images.on)],[data(settingImg: Images.menu, settingName:SettingsTitles.title3,btnStatusImg: Images.off),data(settingImg: Images.ring, settingName: SettingsTitles.title4,btnStatusImg: Images.on)]]
 
     @IBOutlet weak var tblSetting: UITableView!
-    @IBOutlet weak var btnCancle: UIView!
-    @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var btnHelp: UIButton!
     @IBOutlet var vc: UIView!
     
@@ -22,16 +20,7 @@ class ViewController: UIViewController {
         tblSetting.delegate = self
         tblSetting.dataSource = self
         tblSetting.register(UINib(nibName: NibName.tableViewCell, bundle: nil), forCellReuseIdentifier: NibName.tableViewCell)
-        btnCancle.layer.borderWidth = 1
-        btnCancle.layer.borderColor = CGColor.init(red: CGFloat(0), green:  CGFloat(0), blue:  CGFloat(0), alpha:  1)
-        btnCancle.layer.cornerRadius = 8
-        self.navigationItem.title = Constant.setting
-        bottomView.layer.cornerRadius = 24
-        bottomView.isHidden = true
-        let backButton = UIBarButtonItem(title: "", style: .plain, target: self, action: nil    )
-        backButton.setBackgroundImage(UIImage(named: Images.icon), for: .normal, barMetrics: .default) 
-        self.navigationItem.setLeftBarButton(backButton, animated: false)
-    }
+           }
     
     @objc func openBottomSheet() {
         let alertController = UIAlertController(title: BottomSheetConstants.title, message: BottomSheetConstants.message, preferredStyle: .actionSheet)
